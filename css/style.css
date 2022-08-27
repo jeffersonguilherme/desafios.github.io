@@ -1,0 +1,128 @@
+@import url(https://fonts.google.com/specimen/Montserrat);
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+   width: 100vw;
+   height: 100vh;
+   background: rgb(243,234,227);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 20px 0px 0px 20px;
+}
+img, h3, h2, p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-cotent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px;
+    background: white;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    gap: 30px;
+}
+
+.conteudo {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-right: 40px;
+}
+
+.pagamento {
+    display: flex;
+}
+
+
+.categoria {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #828189;
+}
+
+.titulo {
+    
+    font-family: 'Fraunces', serif;
+    font-size: 3.75rem;
+    max-width: 11ch;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.pagamento {
+    font-family: 'Fraunces', serif;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.preco {
+    font-size: 3.125rem;
+    color: #40846b;
+}
+
+.desconto {
+    font-size:1.56rem;
+    text-decoration:line-through;
+    color: #828189;
+}
+
+.btc { 
+    font-family: 'Fraunces', serif;
+    background: #40846b;
+    padding:20px 40px;
+    color: white;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    border: none;
+    display: inline;
+    align-self: stretch;
+    text-align: center;
+
+}
+
+.btc:hover {
+    background: #346956;
+    cursor: pointer;
+}
+.btc img {
+    align-items: center;
+    width: 20px;
+    height: 20px;
+   margin-right: 10px;
+}
+
+@media (max-width: 800px){
+    .main-cotent {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .conteudo {
+        margin: 10px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    img {
+        background-image: url('../images/image-product-mobile.jpg');
+    }
+}
